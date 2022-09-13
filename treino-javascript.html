@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de manipulação da DOM</title>
+
+    <style>
+
+        .divPrincipal {
+            width: 400px;
+            height: 400px;
+            background-color:gray;
+            margin:auto;
+            padding: 10px;
+            border-radius: 10px;
+    
+        }
+
+        .divPrincipal h1 {
+            color: white;
+            font-weight: bolder;
+        }
+
+        label {
+            display: block;
+            color: white;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px
+        }
+
+        #button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        #resultado {
+            color: white;
+            margin-top: 20px;
+            font-size: 1.5rem
+        }
+    </style>
+</head>
+<body>
+    <div class="divPrincipal">
+        <h1>Média Escolar</h1>
+
+        <div class="nomeDoAluno">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" name="nome">
+        </div>
+    
+   
+        <div class="nomeDoAluno">
+            <label for="Nota1">Primeira nota:</label>
+            <input type="text" id="nota1" placeholder="Digite sua primeira nota" name="nome">
+        </div>
+    
+  
+
+        <div class="divNota2">
+            <label for="Nota2">Segunda nota:</label>
+            <input type="text" id="nota2" placeholder="Digite sua segunda nota" name="nome">
+        </div>
+
+        <button id="button">Calcular média</button>
+
+        <p id="resultado"> </p>
+    
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
